@@ -172,6 +172,87 @@ body {
 }
 
 /* -----------------------banner -------------------------- */
+.top_banner {
+  background-image: url('./images/banner1.png');
+  height: 670px;
+}
+
+.banner_container {
+  margin: 0 auto;
+  width: 1110px;
+  overflow: hidden;
+}
+
+.banner_slider {
+  display: flex;
+  width: 4440px;
+  transition: all .5s ease;
+  transform: translateX(0px);
+}
+
+.banner_slide {
+  width: 1110px;
+  margin-top: 170px;
+}
+
+.banner_title {
+  color: var(--text-on-image);
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+.banner_navigation {
+  margin-top: 70px;
+  align-items: flex-end;
+}
+
+.banner_navigation,
+.banner_arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner_left:hover,
+.banner_right:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.banner_left,
+.banner_right {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.banner_dots {
+  display: flex;
+  gap: 40px
+}
+
+.banner_dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255, 255, 255, .4);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot_active {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 
 
 /* --------------------services---------------------------- */
@@ -361,9 +442,182 @@ body {
 }
 
 /* -----------------------clients_slider------------------ */
+.clients_banner {
+  padding: 100px 0;
+  background-color: #ebebeb;
+}
+
+.clients_container {
+  margin: 0 auto;
+  width: 1110px;
+  overflow: hidden;
+}
+
+.clients_subtitle,
+.feedback_subtitle {
+  color: #bdbdbd;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.clients_title,
+.feedback_title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.clients_slider,
+.feedback_slider {
+  display: flex;
+  width: 4440px;
+  transition: all .5s ease;
+  margin-bottom: 50px;
+}
+
+.clients_slide {
+  display: flex;
+  gap: 30px;
+}
+
+.clients_icons {
+  height: 200px;
+}
+
+.clients_navigation,
+.feedback_navigation,
+.clients_arrows,
+.feedback_arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.clients_left,
+.f_arrow_left,
+.clients_right,
+.f_arrow_right {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 95, 163, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.clients_left:hover,
+.f_arrow_left:hover,
+.clients_right:hover,
+.f_arrow_right:hover {
+  background-color: rgba(0, 95, 163, 1);
+}
+
+.clients_dots,
+.feedback_dots {
+  display: flex;
+  gap: 40px;
+}
+
+.clients_dot,
+.feedback_dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(0, 95, 163, .4);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.clients_dot_active,
+.feedback_dot_active {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(0, 95, 163, 1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 
 
 /* --------------------feedback------------------ */
+.feedback {
+  padding: 100px 0;
+}
+
+.feedback_container {
+  margin: 0 auto;
+  width: 1110px;
+  overflow: hidden;
+}
+
+
+.feedback_slide {
+  width: 1110px;
+  background-color: #ebebeb;
+  padding: 45px 95px;
+  font-family: var(--secondary-font);
+}
+
+.feedback_text {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 58px;
+  width: 100%;
+}
+
+.feedback_author {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.author_img {
+  width: 80px;
+  height: 80px;
+}
+
+.employee_name {
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.employee_job {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.feedback_navigation {
+  margin-top: 50px;
+}
+
+@media (max-width: 1300px) {
+  .feedback_text {
+    width: 650px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feedback_text {
+    width: 592px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback_text {
+    width: 405px;
+  }
+
+  .feedback_author {
+    display: none;
+  }
+}
 
 /* -------------------contacts------------------- */
 .contacts {
